@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+}
+
+.video {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 40px;
+  height: 40vh;
+
+}
+
+#vid-width,
+#vid-height {
+  width: 50px;
+}
+
+/* Centering the main container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 20px auto;
+}
+
+/* Styling the button container */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #4959f0;
+  transform: scale(1.05);
+}
+
+/* Styling individual buttons */
+#share {
+  background-color: #3a49f3;
+  color: #fff;
+}
+
+#show-video,
+#stop-video,
+#show-video {
+  background-color: #5f6368;
+  color: #fff;
+}
+
+#change-size,
+#start-record,
+#stop-record,
+#play-record,
+#share-screen,
+#make-offer,
+#accept-offer {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Input field styling */
+#vid-width,
+#vid-height {
+  width: 60px;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling video containers */
+.video {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Titles above videos */
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3a49f3;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .buttons {
+    align-items: center;
+  }
+
+  .video {
+    height: 30vh;
+  }
+}
